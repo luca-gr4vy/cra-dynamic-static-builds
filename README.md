@@ -1,3 +1,16 @@
+# Create React App Example - Dynamic Static Builds
+
+This project demonstrates the use of [Import-meta-env](https://import-meta-env.org/) to build a React application once and deploy it multiple times with different values for environment variables.
+
+## Instructions
+- Install node dependencies `npm i`
+- Set any client-exposed variable in a new `.env` file (copy `.env.example`). This file will be used both in development and production if set.
+- Run in development with `npm run start`
+  - Whenever you change any values in `.env` during development, stop the running command, run `npm run clear:cache` and run `npm run start` again
+- For production, build with `npm run build` and serve the static files in the `build` folder
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
